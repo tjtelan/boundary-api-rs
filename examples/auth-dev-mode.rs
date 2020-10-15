@@ -6,6 +6,6 @@ async fn main() -> Result<(), Box<dyn Error>> {
     let res = client.authenticate().await?;
 
     println!("{:?}", res);
-    
+
     Ok(())
 }
