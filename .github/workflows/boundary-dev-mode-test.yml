@@ -3,7 +3,7 @@ name: boundary-dev-mode-test
 on: [push]
 
 jobs:
-  build:
+  boundary-dev-mode-test:
 
     runs-on: ubuntu-latest
 
@@ -13,7 +13,7 @@ jobs:
       run: |
         wget https://releases.hashicorp.com/boundary/0.1.0/boundary_0.1.0_linux_amd64.zip
         unzip boundary_0.1.0_linux_amd64.zip
-        boundary dev &
+        bash -c "boundary dev" &
         sleep 30
     - name: Run cargo example to test auth works
       run: |
