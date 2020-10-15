@@ -1,0 +1,21 @@
+[package]
+authors = ["T.J. Telan <t.telan@gmail.com>"]
+categories = ["api-bindings", "web-programming::http-client", "authentication"]
+description = ""
+documentation = "https://docs.rs/boundary-api"
+edition = "2018"
+keywords = ["api", "client"]
+license = "MIT"
+name = "boundary-api"
+readme = "README.md"
+repository = "https://github.com/tjtelan/boundary-api-rs"
+version = "0.0.1-alpha.1"
+
+[badges.maintenance]
+status = "actively-developed"
+
+[dependencies]
+reqwest = { version = "^0.10", features = ["json"] }
+tokio = { version = "0.2", features = ["full"] }
+url = "^2.1"
+thiserror = "^1.0"
